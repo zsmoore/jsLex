@@ -1,10 +1,9 @@
 language: node_js
 node_js:
   - "8"
+before_install:
+  - npm i -g npm@version-number
 cache:
   directories:
     - "node_modules"
-before_install:
-  - npm i -g npm@version-number
-  
 script: npm run build
